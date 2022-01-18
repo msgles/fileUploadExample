@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Detalles de la Persona</h1>
+	
+	<img th:alt="${persona.foto}" th:src="@{'/images/'} + ${persona.foto}">
+	
+	<ul>
+		<li th:text="'Nombre de la persona: ' + ${persona.nombre}"></li>
+		<li th:text="'Apellidos de la persona: ' + ${persona.apellidos}"></li>
+	</ul>
+</body>
+</html>

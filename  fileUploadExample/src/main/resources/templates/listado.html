@@ -18,6 +18,7 @@
 			<tr th:each="persona : ${personas}">
 				<td th:text="${persona.nombre}"></td>
 				<td th:text="${persona.apellidos}"></td>
+				<td><a th:href="@{/detalle/} + ${persona.id}">Detalles</a></td>
 			</tr>
 		</tbody>
 	</table>
